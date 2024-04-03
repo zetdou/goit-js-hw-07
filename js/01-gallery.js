@@ -46,7 +46,9 @@ photoGallery.addEventListener("click", (ev) => {
     instance.show();
 
     const keyPress = document.addEventListener("keydown", (ev) => {
+        if (ev.key === "Escape") {
             instance.close();
+        }
     });
 });
 
